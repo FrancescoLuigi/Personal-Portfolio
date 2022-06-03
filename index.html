@@ -1,0 +1,113 @@
+<!--User Story #1: My portfolio should have a welcome section with an id of welcome-section.
+
+User Story #2: The welcome section should have an h1 element that contains text.
+
+User Story #3: My portfolio should have a projects section with an id of projects.
+
+User Story #4: The projects section should contain at least one element with a class of project-tile to hold a project.
+
+User Story #5: The projects section should contain at least one link to a project.
+
+User Story #6: My portfolio should have a navbar with an id of navbar.
+
+User Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of the page.
+
+User Story #8: My portfolio should have a link with an id of profile-link, which opens my GitHub or FCC profile in a new tab.
+
+User Story #9: My portfolio should have at least one media query.
+
+User Story #10: The height of the welcome section should be equal to the height of the viewport.
+
+User Story #11: The navbar should always be at the top of the viewport.  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <navbar id="navbar" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#welcome-section" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#projects" class="nav__link">Work</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </navbar>
+  </header>
+
+  <!-- Introduction -->
+  <header id="welcome-section">
+    <section class="intro">
+      <h1 class="section__title section__title--intro">Hey, I'm <strong>Luigi de Francesco</strong></h1>
+      <p class="section__subtitle section__subtitle--intro">FRONT-END DEV.</p>
+      <img src="./images/Foto perfil online.jpg" alt="a picture of me smiling" class="intro__img">
+      <a href="#welcome-section"></a>
+    </section>
+  </header>
+  <!-- / Introduction -->
+  <!-- About me -->
+  <section class="about-me" id="about">
+    <h2 class="section__title section__title--about">Who I am</h2>
+    <p class="section__subtitle section__subtitle--about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sapiente ex voluptatum exercitationem ullam vitae tempore ad earum facilis iste.</p>
+
+    <div class="about-me__body">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates tempore incidunt dolorum excepturi quo voluptatibus sapiente, voluptatem aut consectetur nisi nulla delectus repellendus mollitia non. Odio veritatis ipsum nostrum vero!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias exercitationem obcaecati, sed a ullam voluptatibus illo fugiat doloribus nam nostrum eveniet minima molestiae harum molestias suscipit dicta perferendis, nesciunt quas!</p>
+    </div>
+    <img src="./images/me-programming.jpg" alt="image of me learning" class="about-me__img">
+  </section>
+  <!-- / About me -->
+  <!-- My work -->
+  <section class="my-work" id="projects">
+    <h2 class="section__title section__title--work">My Projects</h2>
+    <p class="section__subtitle section__subtitle--work"> Some of my work using only HTML and CSS.</p>
+
+    <div class="portfolio">
+      <!-- Portfolio item 1 -->
+      <a href="#" class="portfolio__item">
+        <img src="./images/Tribute-page-print.png" alt="Tribute page" class="portfolio__img">Tribute Page
+      </a>
+      <!-- Portfolio item 2 -->
+      <a href="#" class="portfolio__item">
+        <img src="./images/survey-form-print.png" alt="survey-form" class="portfolio__img">Survey Form
+      </a>
+      <!-- Portfolio item 3 -->
+      <a href="#" class="portfolio__item">
+        <img src="./images/product-landing-page-print.png" alt="product-landing-page" class="portfolio__img">Product Landing Page
+      </a>
+      <!-- Portfolio item 4 -->
+      <a href="#" class="portfolio__item">
+        <img src="./images/technical-documentation-print.png" alt="technical-documentation-page" class="portfolio__img">Technical Documentation Page
+      </a>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <h2 class="footer-text">Let's work together</h2>
+    <a href="mailto:luigidefrancesco1998@gmail.com" class="footer__link"><i class="fas fa-at"></i>luigidefrancesco1998@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a href="https://www.linkedin.com/in/luigi-de-francesco-9a025b226/" class="social-list__link" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </li>
+      <li class="social-list__item">
+        <a href="https://github.com/FrancescoLuigi" class="social-list__link" target="_blank"><i class="fab fa-github"></i></a>
+      </li>
+      <li class="social-list__item">
+        <a href="https://twitter.com/francescluigi" class="social-list__link" target="_blank"><i class="fab fa-twitter"></i></a>
+      </li>
+    </ul>
+    <div class="last-text">
+      <p>This is my first attempt at building a personal portfolio. I've only used html and css.</p>
+      <p>&copy; Created by Luigi de Francesco &hearts;</p>
+    </div>
+  </footer>
+</body>
+</html>
